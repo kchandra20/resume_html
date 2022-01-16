@@ -1,72 +1,247 @@
 <html>
-    <head>
-        <title> 
-           My resume 
-        </title>
-
-        <style>
-            #resumebody {
-                color:blueviolet
-
-            }
+ 
+<head>
+    <title>
+        My Resume
+    </title>
+    <style>
+        html{
+            background-color: #b2c6db
+        }
+        #resumeEmailDivision {
+            text-align: right;
             
-                #educationalqualification
-
+        }
+ 
+        #resumeNameHeading {
             
-        </style>
-    </head>
-        <body id="resumebody">
-            <div id="headingDivision">
-            <div id="resumeNameDivision">
-                <div id="resumeNameheading">chnadramani kuma
-           sophomore,IIT kanpur <br/>
-           deparment of civil engineering<br/>
-           IIT  kanpur<br/>
-           </div>
-            <div id="resumeEmailDIVIsion">
-            chandramani18302@gmail.com
-            +91-8540092114 
-            i will add linked profile<br/> 
-        </div>
-        <div>
-        <div id="educationalqualification">
-         
+            font-size: 30px;
+            font-weight: bold;
+            
+            
+        }
+ 
+        #headingDivision {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+ 
+        .heading {
+            border: 1px solid black;
+        }
+ 
+        .body {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+ 
+        .bodyBottom {
+            border-bottom: 2px solid black;
+            ;
+        }
+ 
+        #educationalQualifications {
+            width: 100%;
+            border: 1px solid black;
+        }
+ 
+        #bottomDivision {
+            display: block;
+            justify-content: space-evenly;
+        }
+ 
+        .contentHeading {
+            text-align: left;
+            font-weight: bold;
+            font-size: 25px;
+            text-decoration: underline;
+        }
+ 
+        .contentSubheading {
+            text-align: left;
+            font-size: 12px;
+        }
+ 
+        .contentLocation {
+            text-align: right;
+            font-size: 12px;
+        }
+ 
+        .contentTime {
+            text-align: right;
+            font-size: 12px;
+        }
+ 
+        .contentText {
+            text-align: left;
+        }
+        .headingContent{
+        font-size: 20px;
+        background-color:violet;
+        }
+        .subheading{
+            font-size: 12px;
+            text-align: right;
+        }
+        .locationContent{
+            font-weight:normal;
+            font-size: 12px;
+            text-align: right;
+        }
+        .common{
+            padding-left: 1%;
+        }
+        .timeContent{
+            font-weight: normal;
+            font-size: 12px;
+            text-align: right;
+        }
+        .timeContent{
+            text-align: left;
+        }
+        .pic{
+            display:flex;
+        }
+        img {
+            padding-top:1rem;
+  border-radius: 50%;
+}
+#resumeNameDivision{
+    padding-left:4%;
+    padding-top:3rem;
+    padding-bottom:1rem
+
+}
+
         
-        <table id="educatinalqualificationTable">
+        
+    </style>
+</head>
+ 
+<body id="resumeBody">
+    <div class=common>
+      <div class=pic>  
+          <img src="ch.jpeg" alt="chandermani pic" width="200" height="200">
+    <div id="headingDivision">
+        <div id="resumeNameDivision">
+            <div id="resumeNameHeading">Chandramani kumar <br /></div>
+            sophomore <br />
+            Department of Civil Engineering <br />
+            IIT Kanpur <br />
+            <a href="mailto:">chandramani18302@gmail.com</a><br />
+            <a>+91-8540092114</a><br />
+        </div>
+    </div>
+</div>
+    <div id="educationalQualifications">
+        <table id="educationalQualificationsTable" width="100%" cellspacing="0">
             <thead>
                 <tr>
-                    <th>year</th>
-                    <td>degree</th>
-                    <th>year</th>
-                    <th>institution</th>
-                    <th>cgpa%</th>
-                    <
+                    <th class="heading">Year</th>
+                    <th class="heading">Degree</th>
+                    <th class="heading">Institution (Board)</th>
+                    <th class="heading">CGPA/%</th>
                 </tr>
-                <thead>
-                    <tbody>
-                        <tr>
-                    <td clas="body">2024</th>
-                <td class="body">B.tech,CE</td>
-                <td class="body">indian institue of technology,kanpur</td>
-                <td class="body">6.00</td>
-            </tr>
-            <tr>
-                <td class="body">2016</td>
-                <td class="body">cbse 12</td>
-                <td class="body">md carmel high scholl ara</td>
-                <td class="body">83.4%</td>
-            </tr>
-            <tr>
-                <td class="body">2016</td>
-                <td class="body">cbse 10</td>
-                <td class="body">mount litera zee school hazaribagh</td>
-                <td class="body">9.6 cgpa</td>
-            </tr>
             </thead>
+            <tbody>
+                <tr>
+                    <td class="body">2024</td>
+                    <td class="body">B. Tech, CE</td>
+                    <td class="body">Indian Institute of Technology, Kanpur</td>
+                    <td class="body">6.0/10.0</td>
+                </tr>
+                <tr>
+                    <td class="body">2019</td>
+                    <td class="body">ISC XII</td>
+                    <td class="body">dk carmel high school</td>
+                    <td class="body">83.5%</td>
+                </tr>
+                <tr>
+                    <td class="body bodyBottom">2017</td>
+                    <td class="body bodyBottom">cbse X</td>
+                    <td class="body bodyBottom">mount litera zee school</td>
+                    <td class="body bodyBottom">9.6</td>
+                </tr>
+            </tbody>
         </table>
-        
     </div>
+    <br/>
+    <div id="bottomDivision">
+        <div id="leftDivision">
+            <div class="contentHeading">
+                Work Experience
+            </div>
+            <div>
+            <li >Member of GI Project
+            </li>
+            <div class="contentSubheading">Organized by Society of Civil Engineering <br/>India
+            <br/>
+            Winter 2021
+ 
+            
+            </div>
+           
+            
+ 
+            
+            </div>
+        <br/>
+        <div id="rightDivision">
+            <div class="contentHeading">
+                Skills
+            </div>
+                
+                <li class="contentText">c,c++</li>
+                <li class="contentText">HTML and CSS</li>
+            
+        </div>
+        <br/>
+        <div id="rightDivision">
+            <div class="contentHeading">
+            Scholastic Aptitude</div>
+                <li class="contentText">qualified JEE ADVANCE EXAM </li>
+                <li class="contentText"> qualified JEE MAINS EXAM </li>
+              <li class="contentText">secured rank one in physics examination in district </li>
+        </div>
+    </div>
+    </div>
+    <div>
+        <br/>
+        <div class="contentHeading">
+            Projects
+        </div>
 
-        </body>
-   
+        <li>GEOINFORMATICS(Present)</li>
+        <li>Piezeoelectricity</li>
+    </div>
+    <div>
+        <br/>
+        <div class="contentHeading">
+            Extra Co-Curricular Activities
+        </div>
+
+        <li>General Quiz Competition<br/></li>
+        National Level:-Second(Silver Medal) <br/>
+        Zonal Level:-First(Gold Medal)<br/>
+       <li> Yoga National Player</li>
+       <li>tabletennis first (zonal level)</li>
+        <li>atheletics (400m race) nationallevel, second position</li>
+    
+    </div>
+    <br/>
+    <div>
+        <div class="contentHeading">
+            Position of Responsibility
+        </div>
+
+        <li>Secretary, Hindi Sahitya Sabha- IIT Kanpur</li>
+        <li>senior executive,techriti,iit kanpur</li>
+        <li>senior executive udghosh,iit kanpur</li>
+        <li>SCHOOL CAPTAIN(at MOUNT LITERA ZEE SCHOOL)
+        </li>
+    </div>
+</div>
+</body>
+ 
 </html>
